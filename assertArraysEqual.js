@@ -2,22 +2,22 @@
 const assertArraysEqual = function(firstArray, secondArray) {
     
   if (firstArray.length !== secondArray.length) {
-    console.log("The first array is NOT equal to the second array.")
-    return false
+    console.log("The first array is NOT equal to the second array.");
+    return false;
   } 
   
   for (let i = 0; i < firstArray.length; i++) {
-    
-    if (firstArray[i] !== secondArray[i]) {
-      console.log("The first array is NOT equal to the second array.")
-      return false
-    } 
 
+    if (firstArray[i] !== secondArray[i]) {
+      console.log("The first array is NOT equal to the second array.");
+      return false;
+    } 
+    
   }
   
-  console.log("The first array IS equal to the second array.")
+  console.log("The first array IS equal to the second array.");
   return true;
-  
+
 }
 
 
