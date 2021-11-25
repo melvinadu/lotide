@@ -38,33 +38,50 @@ const assertArraysEqual = function(firstArray, secondArray) {
   
 }
 
-const letterPositions = function(sentence) {
-  
-    const results = {}
-  
-    for (const position of sentence) {
-      // inside the loop, 
-      // increment the counter for each item:
-      //   set a property with that string key to:
-      //     the value that was already there (or zero if nothing there) with 1 added to it.
-      
-     
-        if (results[letter]) {
-          results[letter] += 1;
-        } else {
-          results[letter] = 1;
-        }
-      
-      console.log(letter);
+/* const letterPositions = function(string) {
+
+  const results = {}
+
+  for (const letter of string) {
+    // inside the loop, 
+    // increment the counter for each item:
+    //   set a property with that string key to:
+    //     the value that was already there (or zero if nothing there) with 1 added to it.
+    
+   
+     if (results[letter]) {
+        results[string[i]].push(i);
+      } else {
+        results[string[i]] = [i];
+      }
+    
+    console.log(letter);
+
+  }
+
+  console.log(results);
+  return results;
+
+  };
+  */
+
+  const letterPositions = function (string) {
+    const results = {};
+    for (let i = 0; i < string.length; i++) {
+      if (results[string[i]]) {
+        results[string[i]].push(i);
+      } else {
+        results[string[i]] = [i];
+      }
     }
-  
     console.log(results);
     return results;
+  };
   
-};
+
 
 //TEST CODE
 assertArraysEqual(letterPositions("hello").h, [0]);
 assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("hello").l, [2]);
+assertArraysEqual(letterPositions("hello").l, [2, 3]);
 assertArraysEqual(letterPositions("hello").o, [4]);
