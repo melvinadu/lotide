@@ -5,8 +5,6 @@ const middle = function(array) {
 
   if (array.length < 3) {
 
-    console.log(newArray);
-
     return newArray;
 
   } else if (array.length % 2 !== 0) {
@@ -14,8 +12,6 @@ const middle = function(array) {
     let j = (array.length / 2 - 0.5) + 1;
 
     newArray = [j];
-
-    console.log(newArray);
 
     return newArray;
 
@@ -26,11 +22,21 @@ const middle = function(array) {
 
     newArray = [i,p]
 
-    console.log(newArray);
-
     return newArray;
 
   } 
+
 }
+/*
+//TEST CODE
+console.log(middle([1])) // => []
+console.log(middle([1, 2])) // => []
+
+console.log(middle([1, 2, 3])) // => [2]
+console.log(middle([1, 2, 3, 4, 5])) // => [3]
+
+console.log(middle([1, 2, 3, 4])) // => [2, 3]
+console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+*/
 
 module.exports = middle;
