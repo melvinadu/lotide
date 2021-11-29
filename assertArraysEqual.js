@@ -21,12 +21,10 @@ const assertArraysEqual = function(firstArray, secondArray) {
 }
 
 
-// TEST CODE
-
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
-assertArraysEqual([1, 2, 3, 4], [1, 2, 3]); // => should FAIL
 
 /*const array = [1, 2];
 console.log(1 === 1);
 console.log(array === array);
 console.log(array === [1, 2]);*/
+
+module.exports = assertArraysEqual;
