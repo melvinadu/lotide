@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
 
@@ -10,7 +11,7 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-
+*/
 
 const findKey = function(object, callback) {
   
@@ -43,7 +44,7 @@ const findKey = function(object, callback) {
   return callback(object);*/
 };
 
-
+/*
 console.log(findKey({
   "Blue Hill": { stars: 0 },
   "Akaleri":   { stars: 0 },
@@ -61,3 +62,7 @@ console.log(findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2))
+
+*/
+
+module.exports = findKey;

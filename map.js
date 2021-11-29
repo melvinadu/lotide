@@ -1,3 +1,4 @@
+/*
 const assertArraysEqual = function(firstArray, secondArray) {
     
   if (firstArray.length !== secondArray.length) {
@@ -22,6 +23,7 @@ const assertArraysEqual = function(firstArray, secondArray) {
 
 
 const words = ["ground", "control", "to", "major", "tom"];
+*/
 
 let map = function (array, callback) {
 
@@ -33,10 +35,13 @@ let map = function (array, callback) {
   
   return results;
 }
-
+/*
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
 
 // TEST CODE
 assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]); // => should PASS
+*/
+
+module.exports = map;

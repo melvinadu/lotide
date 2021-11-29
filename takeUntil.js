@@ -1,4 +1,5 @@
 
+/*
 const assertArraysEqual = function(firstArray, secondArray) {
     
   if (firstArray.length !== secondArray.length) {
@@ -22,6 +23,7 @@ const assertArraysEqual = function(firstArray, secondArray) {
 
 
 const data1 = [0, 0, 1, 0, 2, 1];
+*/
 
 const takeUntil = function(array, callback) {
   return callback(array);
@@ -41,8 +43,11 @@ const callback = function(array) {
   return newArray;
 }
 
-
+/*
 const results1 = takeUntil(data1, callback)
 
 console.log(results1);
 assertArraysEqual(results1, [0, 0, 0, 0]); // => should PASS
+*/
+
+module.exports = takeUntil;

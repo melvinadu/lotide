@@ -1,3 +1,4 @@
+/*
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
 
@@ -7,7 +8,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 
-};
+}; */
 
 
 const countLetters = function(string) {
@@ -34,9 +35,4 @@ const countLetters = function(string) {
 
 }
 
-
-
-const result1 = countLetters("LHL");
-
-assertEqual(result1["L"], 2);
-assertEqual(result1["H"], 1);
+module.exports = countLetters;
