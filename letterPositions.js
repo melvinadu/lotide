@@ -38,11 +38,13 @@ const assertArraysEqual = function(firstArray, secondArray) {
   
 }
 
-/* const letterPositions = function(string) {
+/* USE FOR IN LOOP***
+
+const letterPositions = function(string) {
 
   const results = {}
 
-  for (const letter of string) {
+  for (const letter in string) {
     // inside the loop, 
     // increment the counter for each item:
     //   set a property with that string key to:
